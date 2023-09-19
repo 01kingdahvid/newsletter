@@ -7,11 +7,11 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   
   <title>Frontend Mentor | Newsletter sign-up form with success message</title>
-  <link rel="stylesheet" href="./success.css">
+  <link rel="stylesheet" href="./style.css">
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
+    .attribution { font-size: 11px; text-align: center; margin-top: 2rem; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
@@ -31,12 +31,15 @@
       <li class="line"><img src="./assets/images/icon-list.svg" alt=""><p>And much more!</p></li>
     </ul>
   </div>
-  <h4>Email address</h4>
+  <div class="error-content">
+    <h4>Email address</h4>
+    <b id="error"></b>
+  </div>
   <div class="input">
-  <input class="email" type="email" placeholder="email@company.com">
+  <input class="email error" type="email" placeholder="email@company.com">
 </div>
 <div class="subscribe">
-  <a href="./success.html" class="button" target="_blank">Subscribe to monthly newsletter</a>
+  <a href="#" class="button" id="btn" target="_blank">Subscribe to monthly newsletter</a>
 </div>
 </div>
 </section>
@@ -45,7 +48,6 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">KING DAVID</a>.
   </div>
-
-  <script src="./main.js"></script>
+  <script src="./java.js"></script>
 </body>
 </html>
